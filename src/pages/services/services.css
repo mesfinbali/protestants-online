@@ -1,0 +1,13 @@
+#parallaxintro .view {
+    min-height: 50vh !important;
+    height: unset !important;
+  }
+  
+  .mdbparallaxContact{
+    min-height: 70vh !important;
+    height: unset !important;
+  }
+
+  .serImg{
+height: 440px !important;
+  }

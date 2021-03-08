@@ -1,0 +1,13 @@
+#just-line-break {
+    white-space: pre-line;
+  }
+  
+  #line-break-and-tab {
+    white-space: pre-wrap;
+  }
+  #descriptionMessage {
+    white-space: pre-wrap;
+  }
+  .descriptionMessage {
+    white-space: pre-wrap;
+  }

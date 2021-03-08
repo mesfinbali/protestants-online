@@ -1,0 +1,51 @@
+{
+  "name": "KnowGedeoPeople",
+  "homepage": "https://gedeopeople.com",
+  "version": "0.10.113",
+  "private": true,
+  "// If You want to install mdbreact from our GitLab repository, please replace '4.27.0' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
+  "dependencies": {
+    "@hunters/group-object": "^1.2.8",
+    "axios": "^0.21.1",
+    "facebook-javascript-all-photos": "^1.0.3",
+    "firebase": "^8.0.0",
+    "js-cookie": "^2.2.1",
+    "jw-react-pagination": "^1.1.0",
+    "mdbreact": "4.27.0",
+    "public-ip": "^4.0.3",
+    "react": "^16.12.0",
+    "react-burger-menu": "^2.9.0",
+    "react-device-detect": "^1.14.0",
+    "react-dom": "^16.12.0",
+    "react-grid-gallery": "^0.5.5",
+    "react-icons": "^3.11.0",
+    "react-image-gallery": "^1.0.8",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-multi-carousel": "^2.5.5",
+    "react-player": "^2.6.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.3",
+    "react-scroll-up-button": "^1.6.0",
+    "react-sidebar": "^3.0.2",
+    "react-youtube": "^7.13.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "rename": "renamer --find App-clear.js --replace App.js ./src/App-clear.js && renamer --find style.css --replace index.css ./src/style.css ",
+    "remove-demo": "rimraf ./src/assets ./src/components ./src/pages ./src/Routes.js ./src/App.js ./src/index.css && npm run rename"
+  },
+  "devDependencies": {
+    "fslightbox-react": "^1.5.0",
+    "renamer": "^1.0.0",
+    "rimraf": "^2.6.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

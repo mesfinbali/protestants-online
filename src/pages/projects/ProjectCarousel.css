@@ -1,0 +1,19 @@
+#parallaxintro .view {
+    min-height: 100vh !important;
+    height: unset !important;
+  }
+  
+.roundedHalf{
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 80px;
+  
+  /* border-top-right-radius: 100px;
+  border-bottom-left-radius:  100px; */
+/* border-radius:25px !important; */
+}
+
+.roundedHalfinvers{
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius:  200px;
+}

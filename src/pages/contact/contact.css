@@ -1,0 +1,32 @@
+#parallaxintro .view {
+    min-height: 10vh !important;
+    height: unset !important;
+  }
+  
+  .mdbparallaxContact{
+    min-height: 10vh !important;
+    height: unset !important;
+  }
+
+  .tabnav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color: darkgreen !important;
+    list-style: none;
+}
+
+.navItem {
+     color:white !important;
+    }
+
+
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        height: 135px !important;
+        max-height: 135px !important;
+    }

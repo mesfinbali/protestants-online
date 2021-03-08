@@ -1,0 +1,9 @@
+#parallaxintro .view {
+    min-height: 10vh !important;
+    height: unset !important;
+  }
+  
+  .mdbparallaxContact{
+    min-height: 10vh !important;
+    height: unset !important;
+  }

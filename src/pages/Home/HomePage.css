@@ -1,0 +1,56 @@
+body {
+	background:#fff;
+}
+
+a.border.nav-link.border-light.rounded.mr-1 {
+  color: #3F729B;
+}
+
+a.border.nav-link.border-light.rounded.mr-1:hover {
+  color: #1C2331;
+}
+
+.btn.btn-sm.indigo:hover{
+  color: #fff;
+}
+
+.nav-link.active{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#categories > .col-md-4.mb-5{
+  margin-bottom: 8rem !important;
+}
+.sectionPage {
+  position: relative;
+  top: -15px;
+  margin-bottom: -125px;
+}
+
+.sectionPage::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* background: url('https://mdbootstrap.com/wp-content/uploads/2016/12/big-bundle1.jpg'); */
+  background-position: center center;
+  background-size: cover;
+  filter: opacity(.1);
+}
+/* .mdbheader{
+  background-image: url("https://scontent.fmba5-1.fna.fbcdn.net/v/t1.0-9/120756728_863523140848284_3762177619334421580_o.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_ohc=30wGjwlCtiwAX8uZXh-&_nc_ht=scontent.fmba5-1.fna&oh=b834352556595c8b9e68f66e33b38861&oe=5FA8CCDB");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+} */
+#parallaxintro .view {
+  min-height: 100vh !important;
+  height: unset !important;
+}
+
+.aboucss{
+  background-image: url("https://scontent.fadd1-1.fna.fbcdn.net/v/t1.0-9/135244051_115753210398237_2145285523672321317_n.jpg?_nc_cat=105&ccb=2&_nc_sid=730e14&_nc_ohc=d26QiPIF5NMAX8yP-uS&_nc_ht=scontent.fadd1-1.fna&oh=49d3e3db8a203a35746a89147cf05169&oe=60172EBA") !important;
+
+}

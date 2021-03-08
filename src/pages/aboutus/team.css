@@ -1,0 +1,22 @@
+#parallaxintro .view {
+  min-height: 100vh !important;
+  height: unset !important;
+}
+
+.roundedHalf2 {
+  border-top-left-radius: 190px;
+  border-bottom-right-radius: 100px;
+
+  border-top-right-radius: 190px;
+  border-bottom-left-radius: 100px;
+  /* border-radius:25px !important; */
+}
+/* .img-fluid, .modal-dialog.cascading-modal.modal-avatar .modal-header, .video-fluid {
+  max-width: 70%;
+  height: auto;
+} */
+/* .imagebox{
+  max-width: 70%;
+  height: auto;
+
+} */

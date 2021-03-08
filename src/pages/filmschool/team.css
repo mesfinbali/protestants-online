@@ -1,0 +1,15 @@
+.roundedAboutGedeo{
+    /* border-top-left-radius: 100px; */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius:  200px;
+    border-bottom-left-radius:  200px;
+  }
+  .aboucss{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freeimages.com%2Fimages%2Flarge-previews%2Fa3b%2Fwebsite-rays-background-pattern-1637863.png&f=1&nofb=1") !important;
+
+  }
+
+  .aboutImageView{
+    height: 30rem !important; 
+  }
