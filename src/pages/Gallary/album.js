@@ -7,6 +7,7 @@ import YouTube from 'react-youtube';
 
 import Gallery from 'react-grid-gallery';
 import YoutubePlayerComp from './youtubeplayer';
+import { FacebookInfoData } from '../../Service-ApI/MasterData';
 
 class AlbumPage extends Component {
 constructor(props){
@@ -27,7 +28,9 @@ async componentDidMount(){
 
   window.scrollTo({ top: 0, behavior: "smooth" });
    
-let facebookAlbumPath='https://graph.facebook.com/' + this.state.search.fbId +'?fields=photos{images},description,name,location,created_time,place,cover_photo,link,updated_time&access_token=EAAJvjLe71rMBAEuQEAWbAUE3M59B1OhB8qn2akftaxw62mW5TiBZCZAtaeusVGPOSLca68ua20jyB8huYsZBJENoVHQui1dnIvwnhTZBYlVG7ViAUtjz9vmROhk4N5Nt96ovYTMyBRVtIuGYNoag8j9flZAZCldlcWDKsdGgd4AQZDZD';
+let facebookAlbumPath='https://graph.facebook.com/' + 
+this.state.search.fbId +'?fields=photos{images},description,name,location,created_time,place,cover_photo,link,updated_time'+
+'&access_token='+ FacebookInfoData.token;
 this.initFBdata(facebookAlbumPath,1);
 }
 
