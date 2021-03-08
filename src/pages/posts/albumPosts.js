@@ -1,6 +1,6 @@
 import { MDBContainer } from 'mdbreact';
 import React, { Component } from 'react';
-import {  MDBRow, MDBCol,MDBCardTitle,MDBTabPane,MDBCardText,MDBTooltip,MDBTabContent,MDBNavItem,MDBNav,MDBNavLink,MDBCardHeader,
+import {  MDBRow, MDBCol  ,MDBTabPane, MDBTabContent,MDBNavItem,MDBNav,MDBNavLink, 
   MDBCard, MDBCardBody,
    MDBIcon, MDBMask, MDBView, MDBBtn } from "mdbreact";
 import queryString from "query-string";
@@ -12,6 +12,7 @@ import Gallery from 'react-grid-gallery';
 import GallaryImages from '../Gallary/galaryImagesold';
 import GallaryImagesSlide from '../Gallary/GallaryImagesSlide';
 import VideoGallary from '../Gallary/videoGallary';
+import { FacebookInfoData } from '../../Service-ApI/MasterData';
 // import YoutubePlayerComp from './youtubeplayer';
 var groupObj = require('@hunters/group-object');
 
@@ -45,12 +46,13 @@ async componentDidMount(){
   
 // console.log("Albums ")
 // console.log(search)
-let facebookAlbumPath='https://graph.facebook.com/' + "100180088170173?fields=description,posts{attachments,message,created_time}"
-+"&access_token=EAAJvjLe71rMBAEuQEAWbAUE3M59B1OhB8qn2akftaxw62mW5TiBZCZAtaeusVGPOSLca68ua20jyB8huYsZBJENoVHQui1dnIvwnhTZBYlVG7ViAUtjz9vmROhk4N5Nt96ovYTMyBRVtIuGYNoag8j9flZAZCldlcWDKsdGgd4AQZDZD";
+let facebookAlbumPath='https://graph.facebook.com/' + 
+"100180088170173?fields=description,posts{attachments,message,created_time}"
++"&access_token="+FacebookInfoData.token;
 // this.initFBdata(facebookAlbumPath,1);
 
 let facebookAlbumDataPath='https://graph.facebook.com/' + this.state.search.fbId +"?fields=description,name,photos{target,images,created_time,name,event,updated_time}"
-+"&access_token=EAAJvjLe71rMBAEuQEAWbAUE3M59B1OhB8qn2akftaxw62mW5TiBZCZAtaeusVGPOSLca68ua20jyB8huYsZBJENoVHQui1dnIvwnhTZBYlVG7ViAUtjz9vmROhk4N5Nt96ovYTMyBRVtIuGYNoag8j9flZAZCldlcWDKsdGgd4AQZDZD";
++"&access_token="+FacebookInfoData.token;
 this.initFBAlbumdata(facebookAlbumDataPath,1);
     // var local= JSON.parse(localStorage.getItem("albumPost"));
     //  if(local){
@@ -70,6 +72,7 @@ initFBAlbumdata(albumsUrl,countpage){
     .then(data => 
       {    
       if(!data.error){
+      console.log("posts fb")
       console.log(data.photos.data)
       
         var groupedData = groupObj.group(data.photos.data,'created_time'); 

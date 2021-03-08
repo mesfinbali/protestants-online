@@ -1,5 +1,6 @@
  
 import axios from "axios";
+import { FacebookInfoData } from "./MasterData";
 // import jwt from "jsonwebtoken";
 var groupObj = require('@hunters/group-object');
 export class HttpService {
@@ -147,7 +148,7 @@ export class HttpService {
 static initFBSingleAlbumdata(albumData){
   let  headerAndURL = this.getHeaderAndURL(); 
       let albumsUrl='https://graph.facebook.com/' + albumData.id +"?fields=description,name,photos{target,images,created_time,name,event,updated_time}"
-      +"&access_token=EAAJvjLe71rMBAEuQEAWbAUE3M59B1OhB8qn2akftaxw62mW5TiBZCZAtaeusVGPOSLca68ua20jyB8huYsZBJENoVHQui1dnIvwnhTZBYlVG7ViAUtjz9vmROhk4N5Nt96ovYTMyBRVtIuGYNoag8j9flZAZCldlcWDKsdGgd4AQZDZD";
+      +"&access_token="+FacebookInfoData.token;;
      
       return fetch(albumsUrl).then(response => response.json())
          .then(data => 
@@ -170,7 +171,7 @@ static initFBSingleAlbumdata(albumData){
     let  headerAndURL = this.getHeaderAndURL();
     let id=headerAndURL.albums[albumIndex].id;
         let albumsUrl='https://graph.facebook.com/' + id +"?fields=description,name,photos{target,images,created_time,name,event,updated_time}"
-        +"&access_token=EAAJvjLe71rMBAEuQEAWbAUE3M59B1OhB8qn2akftaxw62mW5TiBZCZAtaeusVGPOSLca68ua20jyB8huYsZBJENoVHQui1dnIvwnhTZBYlVG7ViAUtjz9vmROhk4N5Nt96ovYTMyBRVtIuGYNoag8j9flZAZCldlcWDKsdGgd4AQZDZD";
+        +"&access_token="+FacebookInfoData.token;;
        
          fetch(albumsUrl)
            .then(response => response.json())

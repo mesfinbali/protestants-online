@@ -4,6 +4,15 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
+
+// Facebook Data 
+export const  FacebookInfoData = {
+  token:"EAAFiwB5V1NoBAM25XEDsXdJZBtzLcCZCvpzBegVj6h1WXe1gwgDHfYArrA7Y8Nyht2HG0RQgBIiZAUf0MudxGKMMguZBLycFE96jiqdZA83CrrjxeTTNfGqJrbvZCinaxcQCi8kAji1Bke0sYxELx2BEZCdlTFXoowkqQmNZCb5NWbUWFO4u8D2fwrRnflJEHSoTe2n8UFAknwZDZD",
+  name:"HomeBanner",
+  id:117221260251432,
+  
+}
+
 export const SidebarData = [
   {
     title: 'Home',
@@ -171,9 +180,11 @@ cName: 'nav-text'
 ]; 
 
 // Gallery Collection
-export const  HomeBannersData = {name:"HomeBanner",id:117221260251432,
+export const  HomeBannersData = {
+  name:"HomeBanner",id:117221260251432,
   
 }
+
 export const  HomeStartData = {name:"HomeStart",id:103012238339001,
   
 }

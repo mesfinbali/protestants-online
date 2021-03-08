@@ -8,6 +8,7 @@ import "./post.css"
 // // 
 // import Gallery from 'react-grid-gallery';
 import GallaryImages from '../Gallary/galaryImagesold';
+import { FacebookInfoData } from '../../Service-ApI/MasterData';
 // import YoutubePlayerComp from './youtubeplayer';
 
 class Posts extends Component {
@@ -34,7 +35,7 @@ async componentDidMount(){
 // console.log("Albums ")
 // console.log(search)
 let facebookAlbumPath='https://graph.facebook.com/' + "102938435013048?fields=description,posts{attachments,message,created_time}"
-+"&access_token=EAAJvjLe71rMBAEuQEAWbAUE3M59B1OhB8qn2akftaxw62mW5TiBZCZAtaeusVGPOSLca68ua20jyB8huYsZBJENoVHQui1dnIvwnhTZBYlVG7ViAUtjz9vmROhk4N5Nt96ovYTMyBRVtIuGYNoag8j9flZAZCldlcWDKsdGgd4AQZDZD";
++"&access_token="+FacebookInfoData.token;;
 this.initFBdata(facebookAlbumPath,1);
 }
 
